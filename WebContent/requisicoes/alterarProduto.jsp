@@ -8,11 +8,11 @@
 	String nomeProduto = request.getParameter("produto");
 	double valorProduto = Double.parseDouble(request.getParameter("valor"));
 
-	//Executar o método de alteração
+	//Executar o método de alteração de produto
 	if(ProdutoDao.alterar(idProduto, nomeProduto, valorProduto)== true){
 		response.sendRedirect("../admin/produtos.jsp?mensagem=produtoAlterado");
 	}else{
-		response.sendRedirect("../admin/produtos.jsp?mensagem=produtoAlterado");
+		response.sendRedirect(". ./admin/produtos.jsp?mensagem=produtoAlterado");
 	}
 	//Exibir
 	out.print(idProduto+"<br>");
