@@ -8,7 +8,7 @@
 	String nomeProduto = request.getParameter("produto");
 	double valorProduto = Double.parseDouble(request.getParameter("valor"));
 
-	//Executar o método de alteração de produto
+	//Executar o método de alteração de produtos
 	if(ProdutoDao.alterar(idProduto, nomeProduto, valorProduto)== true){
 		response.sendRedirect("../admin/produtos.jsp?mensagem=produtoAlterado");
 	}else{
