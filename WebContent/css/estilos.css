@@ -1,0 +1,25 @@
+/*Pagina inicial*/
+.formularioLogin{
+	margin-top: 150px;
+}
+
+.formularioLogin input{
+	margin-bottom: 10px;
+
+}
+
+/*Produtos*/
+.formularioProduto{
+	width: 50%;
+	margin: 10% auto;
+}
+
+.formularioProduto input {
+	margin-bottom: 10px;
+}
+
+/*Botão*/
+.btn{
+	vertical-align:top;
+	margin-right: 10px;
+}
